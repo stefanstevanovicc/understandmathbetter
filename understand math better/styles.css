@@ -1,0 +1,31 @@
+body{ background-color: black;
+color: aliceblue;}
+
+h1{ 
+  position: relative;
+  top: 50%;
+left: 30%;}
+p{ position: relative;
+  top: 60%;
+left: 50%;}
+
+.slide-in, .slide-in-delayed {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-in {
+  animation: slideInAnimation 3s ease 0s 1 normal forwards;
+}
+
+.slide-in-delayed {
+  animation: slideInAnimation 4s ease 2s 1 normal forwards;
+}
+
+@keyframes slideInAnimation {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
